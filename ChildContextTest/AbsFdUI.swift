@@ -11,30 +11,22 @@ import CoreData
 
 struct AbsFdUI: View
 {
-    
     @State var showModal = false
     @Environment(\.managedObjectContext) var moc
     let absFd: AbsFd
     
-    func crtFd() -> CrtFd {
-        let child = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
-        child.parent = moc
-        //child.insert(absFd)
-        let cF = CrtFd(scale: 1.0, absFd: absFd, moc: child)
-        return cF
+    func crtFdModal() -> CrtFdUI {
+        let cF = CrtFd(scale: 1.0, absFd: absFd, moc: moc)
+        return CrtFdUI(crtFd: cF)
     }
     
     var body: some View {
         VStack {
             Text("AbsFdUI")
             Text("AbsFd.name = \(absFd.name ?? "Not Optional in Core Data")")
-            Button(action: { self.showModal.toggle() }) {
-                Text("Present Modal")
-            }
+            Button(action: { self.showModal.toggle() }) { Text("Present Modal") }
         }
-        .sheet(isPresented: $showModal) {
-            CrtFdUI(crtFd: self.crtFd() )
-        }
+        .sheet(isPresented: $showModal) { self.crtFdModal() }
     }
 }
 
