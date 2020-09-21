@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CrtFdUI: View
 {
-    let crtFd: CrtFd
+    @ObservedObject var crtFd: CrtFd
     @Environment(\.managedObjectContext) var childMoc
     
     var body: some View {
@@ -19,7 +19,6 @@ struct CrtFdUI: View
             Text("CrtFd Scale = \(crtFd.scale)")
             Text("CrtFd.absFd.name = \(crtFd.absFd?.name ?? "WTF")")
         }
+        .navigationBarTitle("CrtFdUI")
     }
 }
-
-

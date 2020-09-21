@@ -18,11 +18,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
         let absFd = AbsFd(name: "Test AbsFd", moc: context)
-        let absFdUI = AbsFdUI(absFd: absFd).environment(\.managedObjectContext, context)
+        
+        _ = CrtFd(scale: 2.0, absFd: absFd, moc: context)
+        //let absFdUI = AbsFdUI(absFd: absFd).environment(\.managedObjectContext, context)
+        
+        let crtFdsUI = CrtFdsUI(absFd: absFd).environment(\.managedObjectContext, context)
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: absFdUI)
+            window.rootViewController = UIHostingController(rootView: crtFdsUI)
             self.window = window
             window.makeKeyAndVisible()
         }

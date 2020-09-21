@@ -17,6 +17,9 @@
 		AF5D37F525191FE4007E8B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5D37F425191FE4007E8B75 /* Assets.xcassets */; };
 		AF5D37F825191FE4007E8B75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5D37F725191FE4007E8B75 /* Preview Assets.xcassets */; };
 		AF5D37FB25191FE4007E8B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D37F925191FE4007E8B75 /* LaunchScreen.storyboard */; };
+		AF8DF4FA25193F6400D129DF /* PlusBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8DF4F925193F6400D129DF /* PlusBtn.swift */; };
+		AF8DF4FC251941F400D129DF /* CrtFdsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8DF4FB251941F400D129DF /* CrtFdsUI.swift */; };
+		AF8DF4FE2519420600D129DF /* CrtFdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8DF4FD2519420600D129DF /* CrtFdCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		AF5D37F725191FE4007E8B75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF5D37FA25191FE4007E8B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF5D37FC25191FE4007E8B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8DF4F925193F6400D129DF /* PlusBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusBtn.swift; sourceTree = "<group>"; };
+		AF8DF4FB251941F400D129DF /* CrtFdsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrtFdsUI.swift; sourceTree = "<group>"; };
+		AF8DF4FD2519420600D129DF /* CrtFdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrtFdCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +70,13 @@
 		AF5D37EA25191FE2007E8B75 /* ChildContextTest */ = {
 			isa = PBXGroup;
 			children = (
+				AF8DF4F925193F6400D129DF /* PlusBtn.swift */,
 				AF5D37EB25191FE2007E8B75 /* AppDelegate.swift */,
 				AF5D37ED25191FE2007E8B75 /* SceneDelegate.swift */,
 				AF5D37F225191FE2007E8B75 /* AbsFdUI.swift */,
 				AF0445D52519336A008486A8 /* CrtFdUI.swift */,
+				AF8DF4FB251941F400D129DF /* CrtFdsUI.swift */,
+				AF8DF4FD2519420600D129DF /* CrtFdCell.swift */,
 				AF0445D725193378008486A8 /* CrtFd.swift */,
 				AF0445D925193382008486A8 /* AbsFd.swift */,
 				AF5D37F425191FE4007E8B75 /* Assets.xcassets */,
@@ -158,11 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8DF4FC251941F400D129DF /* CrtFdsUI.swift in Sources */,
+				AF8DF4FA25193F6400D129DF /* PlusBtn.swift in Sources */,
 				AF5D37EC25191FE2007E8B75 /* AppDelegate.swift in Sources */,
 				AF5D37EE25191FE2007E8B75 /* SceneDelegate.swift in Sources */,
 				AF0445D62519336A008486A8 /* CrtFdUI.swift in Sources */,
 				AF0445D825193378008486A8 /* CrtFd.swift in Sources */,
 				AF5D37F325191FE2007E8B75 /* AbsFdUI.swift in Sources */,
+				AF8DF4FE2519420600D129DF /* CrtFdCell.swift in Sources */,
 				AF5D37F125191FE2007E8B75 /* ChildContextTest.xcdatamodeld in Sources */,
 				AF0445DA25193382008486A8 /* AbsFd.swift in Sources */,
 			);
