@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0445D62519336A008486A8 /* CrtFdUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0445D52519336A008486A8 /* CrtFdUI.swift */; };
+		AF0445D825193378008486A8 /* CrtFd.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0445D725193378008486A8 /* CrtFd.swift */; };
+		AF0445DA25193382008486A8 /* AbsFd.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0445D925193382008486A8 /* AbsFd.swift */; };
 		AF5D37EC25191FE2007E8B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D37EB25191FE2007E8B75 /* AppDelegate.swift */; };
 		AF5D37EE25191FE2007E8B75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D37ED25191FE2007E8B75 /* SceneDelegate.swift */; };
 		AF5D37F125191FE2007E8B75 /* ChildContextTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5D37EF25191FE2007E8B75 /* ChildContextTest.xcdatamodeld */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF0445D52519336A008486A8 /* CrtFdUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrtFdUI.swift; sourceTree = "<group>"; };
+		AF0445D725193378008486A8 /* CrtFd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrtFd.swift; sourceTree = "<group>"; };
+		AF0445D925193382008486A8 /* AbsFd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsFd.swift; sourceTree = "<group>"; };
 		AF5D37E825191FE2007E8B75 /* ChildContextTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildContextTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5D37EB25191FE2007E8B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF5D37ED25191FE2007E8B75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 				AF5D37EB25191FE2007E8B75 /* AppDelegate.swift */,
 				AF5D37ED25191FE2007E8B75 /* SceneDelegate.swift */,
 				AF5D37F225191FE2007E8B75 /* AbsFdUI.swift */,
+				AF0445D52519336A008486A8 /* CrtFdUI.swift */,
+				AF0445D725193378008486A8 /* CrtFd.swift */,
+				AF0445D925193382008486A8 /* AbsFd.swift */,
 				AF5D37F425191FE4007E8B75 /* Assets.xcassets */,
 				AF5D37F925191FE4007E8B75 /* LaunchScreen.storyboard */,
 				AF5D37FC25191FE4007E8B75 /* Info.plist */,
@@ -151,8 +160,11 @@
 			files = (
 				AF5D37EC25191FE2007E8B75 /* AppDelegate.swift in Sources */,
 				AF5D37EE25191FE2007E8B75 /* SceneDelegate.swift in Sources */,
+				AF0445D62519336A008486A8 /* CrtFdUI.swift in Sources */,
+				AF0445D825193378008486A8 /* CrtFd.swift in Sources */,
 				AF5D37F325191FE2007E8B75 /* AbsFdUI.swift in Sources */,
 				AF5D37F125191FE2007E8B75 /* ChildContextTest.xcdatamodeld in Sources */,
+				AF0445DA25193382008486A8 /* AbsFd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

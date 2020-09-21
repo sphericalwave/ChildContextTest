@@ -29,35 +29,3 @@ struct AbsFdUI: View
         .sheet(isPresented: $showModal) { self.crtFdModal() }
     }
 }
-
-struct CrtFdUI: View
-{
-    let crtFd: CrtFd
-    @Environment(\.managedObjectContext) var childMoc
-    
-    var body: some View {
-        VStack {
-            Text("CrtFdUI")
-            Text("CrtFd Scale = \(crtFd.scale)")
-            Text("CrtFd.absFd.name = \(crtFd.absFd?.name ?? "WTF")")
-        }
-    }
-}
-
-extension CrtFd
-{
-    convenience init(scale: Double, absFd: AbsFd, moc: NSManagedObjectContext) {
-        self.init(context: moc)
-        self.absFd = absFd
-        self.scale = scale
-    }
-}
-
-extension AbsFd
-{    
-    convenience init(name: String, moc: NSManagedObjectContext) {
-        self.init(context: moc)
-        self.name = name
-    }
-}
-
