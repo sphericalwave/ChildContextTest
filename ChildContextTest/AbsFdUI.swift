@@ -16,16 +16,10 @@ struct AbsFdUI: View
     @Environment(\.managedObjectContext) var moc
     let absFd: AbsFd
     
-    func childCntxt() -> NSManagedObjectContext {
-        let cntxt = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
-        cntxt.parent = moc
-        return cntxt
-    }
-    
     func crtFd() -> CrtFd {
         let child = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         child.parent = moc
-        child.insert(absFd)
+        //child.insert(absFd)
         let cF = CrtFd(scale: 1.0, absFd: absFd, moc: child)
         return cF
     }
@@ -62,8 +56,6 @@ extension CrtFd
 {
     convenience init(scale: Double, absFd: AbsFd, moc: NSManagedObjectContext) {
         self.init(context: moc)
-        //moc.insert(absFd)
-        //moc.insert(<#T##object: NSManagedObject##NSManagedObject#>)
         self.absFd = absFd
         self.scale = scale
     }
