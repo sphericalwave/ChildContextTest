@@ -2,11 +2,11 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="AbsFd" representedClassName="AbsFd" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String"/>
-        <relationship name="crtFd" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CrtFd" inverseName="absFd" inverseEntity="CrtFd"/>
+        <relationship name="crtFds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CrtFd" inverseName="absFd" inverseEntity="CrtFd"/>
     </entity>
     <entity name="CrtFd" representedClassName="CrtFd" syncable="YES" codeGenerationType="class">
         <attribute name="scale" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="absFd" maxCount="1" deletionRule="Nullify" destinationEntity="AbsFd" inverseName="crtFd" inverseEntity="AbsFd"/>
+        <relationship name="absFd" maxCount="1" deletionRule="Nullify" destinationEntity="AbsFd" inverseName="crtFds" inverseEntity="AbsFd"/>
     </entity>
     <elements>
         <element name="AbsFd" positionX="-63" positionY="-18" width="128" height="73"/>
